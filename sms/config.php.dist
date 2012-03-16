@@ -1,0 +1,5 @@
+<?php
+    $email = null;
+    $password = null;
+    $phone = null;
+    $sender_name = "orloffv.ru";
