@@ -10,3 +10,15 @@
     margin-top: 40px;
     padding: 10px 10px 20px;
 }
+
+li {
+    line-height: 21px;
+}
+
+.btn-mini {
+    margin-top: -3px;
+}
+
+.modal {
+    display: none;
+}

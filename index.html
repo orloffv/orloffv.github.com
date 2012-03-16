@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="utf-8">
     <title>Vitaly Orlov</title>
@@ -8,6 +8,9 @@
     <meta name="author" content="orloff.v@gmail.com">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <link href="vendor/bootstrap/docs/assets/css/bootstrap.css" rel="stylesheet">
+    <script src="vendor/bootstrap/js/bootstrap-modal.js"></script>
+    <script src="vendor/jurlp/jurlp.min.js"></script>
+    <script src="js/me.js"></script>
     <link href="css/me.css" rel="stylesheet">
 </head>
 <body>
@@ -30,10 +33,14 @@
                         Контакты
                     </li>
                     <li>
+                        <i class="icon-user"></i>
                         Виталий Орлов
                     </li>
                     <li>
-                        <a href="mailto:mail@orloffv.ru">mail@orloffv.ru</a>
+                        <a href="mailto:mail@orloffv.ru">
+                            <i class="icon-envelope"></i>
+                            mail@orloffv.ru
+                        </a>
                     </li>
                     <li>
                         <div class="text-left">скайп</div>
@@ -46,6 +53,10 @@
                     <li>
                         <div class="text-left">телефон</div>
                         +7(926)521-85-26
+                        <span data-sms="send" class="btn btn-mini btn-success">
+                        <i class="icon-comment icon-white"></i>
+                            смс
+                        </span>
                     </li>
                     <li class="nav-header">
                         Могу
@@ -147,6 +158,20 @@
                 </ul>
             </div>
             <div class="span3">&nbsp;</div>
+        </div>
+    </div>
+
+    <div>
+        <div class="modal" id="smsModal">
+            <div class="modal-header">
+                <a class="close" data-dismiss="modal">×</a>
+                <h3>Смс</h3>
+            </div>
+            <div class="modal-content">
+
+            </div>
+
+            </div>
         </div>
     </div>
 
