@@ -2,7 +2,7 @@ $(function () {
     var $jurl = $.jurlp();
     $("[data-sms]").click(function()
     {
-        if ($jurl != 'orloffv.ru')
+        if ($jurl.host() != 'orloffv.ru')
         {
             $jurl.url("http://orloffv.ru/sms/send");
             $jurl.goto();
