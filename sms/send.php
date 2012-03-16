@@ -14,7 +14,6 @@
             array(
                 'sender_name' => $sender_name,
                 'api_v' => '1.1',
-                'test' => 1,
                 'satellite_adv' => 'IF_EXISTS',
             )
         );
