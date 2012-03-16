@@ -1,3 +1,10 @@
+<?php
+session_start();
+
+$security = $_SESSION['security'] = uniqid();
+?>
+
+
 <div class="modal-body">
     <div class="control-group">
         <label class="control-label" for="textarea">Сообщение</label>
@@ -18,7 +25,7 @@
 
         if (message)
         {
-            $.post('sms/send', {message : message}, function(data) {
+            $.post('sms/send', {message : message, security : '<?=$security?>'}, function(data) {
                 if (data.status == 'success')
                 {
                     $(".help-inline", "#smsModal").html('');
@@ -34,5 +41,7 @@
         {
             $(".help-inline", "#smsModal").html('Введите сообщение!');
         }
+
+        return false;
     });
 </script>

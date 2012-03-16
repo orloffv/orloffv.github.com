@@ -17,6 +17,8 @@ $(function () {
         {
             modal();
         }
+
+        return false;
     });
 
     function modal()
