@@ -22,3 +22,17 @@ li {
 .modal {
     display: none;
 }
+
+.resume-description {
+    font-size: 65%;
+    margin: 0px 0px 10px 20px;
+    white-space: nowrap;
+}
+
+.resume-description strong {
+    font-weight: 500;
+}
+
+.resume-title {
+    line-height: 15px;
+}

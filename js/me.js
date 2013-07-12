@@ -3,10 +3,10 @@ $(function () {
 
     if ($jurl.host() == 'orloffv.ru' && $jurl.fragment() == '#sms')
     {
-       modal();
+        showModal();
     }
 
-    $("[data-sms]").click(function()
+    $("[data-sms]").click(function(e)
     {
         if ($jurl.host() != 'orloffv.ru')
         {
@@ -15,13 +15,13 @@ $(function () {
         }
         else
         {
-            modal();
+            showModal();
         }
 
-        return false;
+        e.preventDefault();
     });
 
-    function modal()
+    function showModal()
     {
         $.get('sms/popup', function(data)
         {
